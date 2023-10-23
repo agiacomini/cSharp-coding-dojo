@@ -16,6 +16,7 @@ TDD Project implementing:
 
 - [Leap Year Kata](#leap-year-kata) 
 - [Password Validation Kata](#password-validation-kata) 
+- [Spiders Kata](#spiders-kata) 
 
 ## Leap Year Kata
 
@@ -39,16 +40,16 @@ The password will be introduced by the user (as an argument of the method) and s
 
 A valid password should meet the following requirements:
 
-    - Have more than 8 characters
-    - Contains a capital letter
-    - Contains a lowercase
-    - Contains a number
-    - Contains an underscore
+- Have more than 8 characters
+- Contains a capital letter
+- Contains a lowercase
+- Contains a number
+- Contains an underscore
 
 ### Technical requirements:
 
-    . We want a method that answers if the password is valid or not.
-    . We don't want to know the reason when the password is invalid (the return value is a boolean)
+* We want a method that answers if the password is valid or not.
+* We don't want to know the reason when the password is invalid (the return value is a boolean)
 
 ### Iteration 2 - Rules abstraction
 
@@ -59,17 +60,17 @@ Let's pretend that now we want to create another type of password validations be
 
 Validation 2:
 
-    - Have more than 6 characters
-    - Contains a capital letter
-    - Contains a lowercase
-    - Contains a number
+- Have more than 6 characters
+- Contains a capital letter
+- Contains a lowercase
+- Contains a number
 
 Validation 3:
 
-    - Have more than 16 characters
-    - Contains a capital letter
-    - Contains a lowercase
-    - Contains an underscore
+- Have more than 16 characters
+- Contains a capital letter
+- Contains a lowercase
+- Contains an underscore
 
 ### Things to practice
 
@@ -96,17 +97,17 @@ Up untill this point we've been able to create a list of validation rules and va
 
 Validation 4
 
-    - Have more than 8 characters
-    - Contains a capital letter
-    - Contains a number
-    - Contains an underscore
+- Have more than 8 characters
+- Contains a capital letter
+- Contains a number
+- Contains an underscore
 
 Examples:
 
-    - Have more than 8 characters ✅
-    - Contains a capital letter ✅
-    - Contains a number ✅
-    - Contains an underscore ❌
+- Have more than 8 characters ✅
+- Contains a capital letter ✅
+- Contains a number ✅
+- Contains an underscore ❌
 
 This password it's a valid password
 
@@ -115,3 +116,30 @@ This password it's a valid password
 This will help to enforce encapsulation for the lists of rules and have a better design for validation strategies [preventing us from using inheritance], this also could help us work on the Strategy pattern.
 
 Link: https://www.codurance.com/katas/password-validation
+
+## Spiders Kata
+
+### Intro
+
+Spiders are amazing creatures, their ability to put traps to catch their prey is famous, but what happens when they try to hunt their own species? Let's create a scenario to see if we can trap a spider while being a spider!
+
+### Requirements
+
+Create a turn-based application where our spider will chase another spider.
+We have 10 moves to catch our prey, if we fail, our spider dies.
+
+On each turn we will control the spider and pass it a command that orders it where to move to, out of bound moves are not allowed as we should only move within the map.
+
+The map should be printed at each turn so we can see how the game is developing.
+
+### Rules
+
+* The starting distance between our spider and our prey is 2 spaces.
+* The starting positions can be random.
+* Each spider can only move on their turn.
+* Each spider has to follow the existing paths, no new paths can be created.
+* We have 10 turns to play.
+* If our spider catches its prey, the game ends and we win. Multiplication/Division, Addition/Subtraction)
+* If our spider fails to catch its prey, the game ends and we lose.
+
+Link: https://www.codurance.com/katas/spiders
