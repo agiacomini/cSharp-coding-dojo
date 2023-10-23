@@ -1,13 +1,16 @@
 <p align="center"> 
-    <img src="/img/xUnitLogo.png" alt="csharp" width="200" height="200"/> 
+    <img src="./img/xLogo.png" alt="csharp" width="200" height="200"/>
+    <img src="./img/MSTest.png" alt="csharp" width="200" height="200"/> 
 </p>
+
+<!-- ![xUnitLogo](/img/xUnitLogo.png) -->
 
 # Project Description
 
+TDD Project implementing:
 
-## CodingDojo (xUnit Framework)
-
-## NinjaDojo (Microsoft.VisualStudio.TestTools.UnitTesting Framework)
+    1. xUnit Framework (Coding Dojo)
+    2. Microsoft UnitTesting Framework (NinjaDojo)
 
 # KATAs
 
