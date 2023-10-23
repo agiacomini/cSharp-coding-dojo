@@ -11,8 +11,8 @@
 
 # KATAs
 
-    - [Leap Year Kata](#leap-year-kata) 
-    - [Password Validation Kata](#password-validation-kata) 
+- [Leap Year Kata](#leap-year-kata) 
+- [Password Validation Kata](#password-validation-kata) 
 
 ## Leap Year Kata
 
