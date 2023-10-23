@@ -9,8 +9,8 @@
 
 TDD Project implementing:
 
-    1. xUnit Framework (Coding Dojo)
-    2. Microsoft UnitTesting Framework (NinjaDojo)
+1. xUnit Framework (Coding Dojo)
+2. Microsoft UnitTesting Framework (NinjaDojo)
 
 # KATAs
 
