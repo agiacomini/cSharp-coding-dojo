@@ -17,7 +17,7 @@ public class TextProcessing
     {
         Text text = new Text(originalString);
         text.ProcessText();
-        return text.TopTenWords();
+        return text.TopTenWords;
     }
 
     public static int WordNumber(string originalString)
