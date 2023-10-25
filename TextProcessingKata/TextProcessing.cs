@@ -5,42 +5,25 @@ namespace TextProcessingKata;
 
 public class TextProcessing
 {
-    Dictionary<string, int> _map = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
-    public static readonly string PATTERN_FIND_PUNCTUATION = "[^\\w\\s\\d]";
-    string[] _topTenWord = new string[10];
-    public bool Process(string inputString)
+    public static int CalculateReadingTime(string originalString)
     {
-        List<string> inputStringSplitted = CleanInputString(inputString).Split(" ").ToList();
-        foreach (string word in inputStringSplitted)
-        {
-            AddOrUpdateKeyMapValue(word);
-        }
-        return true;
+        Text text = new Text(originalString);
+
+        text.ProcessText();
+        return text.ReadingTime();
     }
 
-    private void AddOrUpdateKeyMapValue(string word)
+    public static List<KeyValuePair<string, int>> CalculateTopTenWords(string originalString)
     {
-        if(!_map.Any(i => i.Key.ToLower().Equals(word.ToLower())))
-        {
-            _map.Add(word, 1);
-            return;
-        }
-        _map[word] = _map[word] + 1;
+        Text text = new Text(originalString);
+        text.ProcessText();
+        return text.TopTenWords();
     }
 
-    private string CleanInputString(string inputString)
+    public static int WordNumber(string originalString)
     {
-        return Regex.Replace(inputString, PATTERN_FIND_PUNCTUATION, "");
-    }
-
-    private void CheckWordInsideMap(string word)
-    {
-        string mapValue = string.Empty;
-        _map.ContainsKey(word);
-    }
-
-    private void TopTenWord()
-    {
-
+        Text text = new Text(originalString);
+        text.Content = originalString;
+        return text.NumberOfWordsSplitted();
     }
 }
