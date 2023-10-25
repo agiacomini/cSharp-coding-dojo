@@ -12,6 +12,7 @@ namespace TextProcessingKata
         public Text(string originalString)
         {
             this.Content = originalString;
+            DeleteSnippedCodeFromString();
             ExtractWords();
         }
 
@@ -22,6 +23,18 @@ namespace TextProcessingKata
                 AddOrUpdateKeyMapValue(word);
             }
             UpdateTopTenWord();
+        }
+
+        private bool CheckIfSnippedCodeIsPresent()
+        {
+            // return this.Content.Contains(StopWordSTART) && this.Content.Contains(StopWordEND);
+            return this.Content.Contains("<javascript>") && this.Content.Contains("</javascript>");
+        }
+
+        public void DeleteSnippedCodeFromString()
+        {
+            if(CheckIfSnippedCodeIsPresent())
+                this.Content = Regex.Replace(this.Content, TextProcessingRegex.PATTERN_FIND_CODE_SNIPPED, "");
         }
 
         private void UpdateTopTenWord()

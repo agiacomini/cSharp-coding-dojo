@@ -9,6 +9,8 @@ public class TextProcessing
     {
         Text text = new Text(originalString);
 
+        text.DeleteSnippedCodeFromString();
+
         text.ProcessText();
         return text.ReadingTime();
     }

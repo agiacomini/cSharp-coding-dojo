@@ -9,5 +9,7 @@ namespace TextProcessingKata
     {
         public static readonly string PATTERN_FIND_PUNCTUATION = "[^\\w\\s\\d]";
         public static readonly string PATTERN_FIND_WORD = "[^\\s]+";
+        public static readonly string PATTERN_FIND_CODE_SNIPPED = "<javascript>[\\w\\s\\W]*<\\/javascript>";
+        public static readonly string PATTERN_FIND_STOP_WORDS = "";
     }
 }

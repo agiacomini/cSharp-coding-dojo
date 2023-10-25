@@ -7,6 +7,7 @@ namespace TextProcessingKata
 {
     public interface ITextOperation
     {
+        public void ProcessText();
         public int NumberOfWordsSplitted();
         public int ReadingTime();
     }

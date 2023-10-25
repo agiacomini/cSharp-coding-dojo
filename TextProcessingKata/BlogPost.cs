@@ -7,6 +7,13 @@ namespace TextProcessingKata
 {
     public class BlogPost
     {
+        public static readonly string stringWith21Words = @"Hello, this is an example for you to practice. You should grab this text and make it as your test case.";
+        public static readonly string stringWith21WordsAndSnippedCode = @"Hello, this is an example for you to practice. You should grab this text and make it as your test case: 
+                                                                        <javascript>
+                                                                        if (true) {
+                                                                        console.log('should should should')
+                                                                        }
+                                                                        </javascript>";
         public static readonly string stringWith783Words = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec consectetur mi, ac posuere libero. Donec condimentum maximus tempus. Aenean blandit varius mauris, ac eleifend ante dapibus ut. Aliquam libero augue, luctus vel accumsan dignissim, fringilla nec velit. Nunc varius felis orci, eu blandit felis efficitur at. Quisque condimentum, metus vel vestibulum lacinia, leo arcu accumsan turpis, et facilisis diam turpis a odio. Proin et leo nibh. Nulla erat lacus, pulvinar eu neque quis, facilisis vestibulum metus. Ut dignissim diam volutpat imperdiet mollis.
                     Donec in faucibus arcu, ut semper est. Sed lacus ante, vestibulum eget metus sit amet, interdum molestie mauris. Etiam sollicitudin neque at libero lobortis, a egestas neque dapibus. Ut nec diam purus. Vivamus eros tortor, accumsan vel tellus vel, posuere bibendum augue. Curabitur quis posuere turpis. Ut sed odio ut erat facilisis aliquet nec ut purus. Aenean non laoreet orci. Nullam tempus fringilla dapibus. Suspendisse tincidunt egestas tellus, quis accumsan sem pretium sit amet. Pellentesque accumsan dolor quam, et tincidunt metus sagittis vitae. Fusce porta rutrum augue. Suspendisse semper elit id accumsan vehicula.
                     Vestibulum ac nisl euismod, pretium augue quis, dictum nulla. Donec non nisl ultricies lorem dapibus consequat sed eget urna. Nulla vel turpis placerat, eleifend magna eu, dapibus dolor. Maecenas at massa consectetur, porttitor nunc eu, rutrum libero. Pellentesque nec ultricies arcu, eget mollis risus. Aliquam nibh lacus, ultricies vel magna eu, lobortis euismod velit. Aenean viverra nulla vitae ante ullamcorper, non rutrum magna imperdiet. Ut pulvinar erat id velit congue, sed imperdiet magna porta. Pellentesque bibendum quam tellus, efficitur condimentum massa tempus blandit.

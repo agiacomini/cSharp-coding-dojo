@@ -12,7 +12,7 @@ namespace CodingDojo
         public void The_top_ten_list_of_most_common_word_are_equals_to_expected()
         {
             // Given
-            inputString = "Hello, this is an example for you to practice. You should grab this text and make it as your test case.";
+            inputString = BlogPost.stringWith21Words;
             expectedTopTenList.Add(new KeyValuePair<string, int>("you", 2));
             expectedTopTenList.Add(new KeyValuePair<string, int>("this", 2));
             expectedTopTenList.Add(new KeyValuePair<string, int>("your", 1));
@@ -38,7 +38,7 @@ namespace CodingDojo
         public void The_word_number_is_correct()
         {
             // Given
-            inputString = "Hello, this is an example for you to practice. You should grab this text and make it as your test case.";
+            inputString = BlogPost.stringWith21Words;
         
             // When
             int wordNumber = TextProcessing.WordNumber(inputString);
@@ -84,6 +84,19 @@ namespace CodingDojo
         
             // Then
             Assert.Equal(2, readingTime);
+        }
+
+        [Fact]
+        public void The_Word_Number_Calculation_Exclude_Snipped_Code()
+        {
+            // Given
+            inputString = BlogPost.stringWith21WordsAndSnippedCode;
+        
+            // When
+            int wordNumber = TextProcessing.WordNumber(inputString);
+        
+            // Then
+            Assert.Equal(21, wordNumber);
         }
     }
 }
